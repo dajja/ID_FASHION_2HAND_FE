@@ -39,11 +39,12 @@
         display: none;
     }
     .SignIn .from-SignIn{
-        width: 90%;
+        width: 100%;
         padding: 1rem;
+        margin-left: 8rem;
     }
     .Forgot-password{
-        margin-left: 14rem;
+        margin-left: 11rem;
     }
 
     button.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-primary{
@@ -52,14 +53,29 @@
     }
 
     .link-SignUp {
-        margin: 2.5rem;
+        margin: 1vh;
     }
 
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768) {
+    .backgroud-image{
+        display: none;
+    }
+    .SignIn .from-SignIn{
+        width: 100%;
+        padding: 16vh 0;
+        margin-left: 13rem;
+    }
+    .Forgot-password{
+        margin-left: 15rem;
+        font-size: 1rem;
+    }
 
+    button.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-primary{
+        max-width: 100%;
+    }
 }
 
 /* talet */
