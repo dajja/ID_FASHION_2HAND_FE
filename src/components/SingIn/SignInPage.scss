@@ -1,0 +1,99 @@
+
+// @import '../.././assets/style.scss';
+
+.SignIn {
+    display: flex;
+}
+
+.SignIn .from-SignIn {
+    width: 65%;
+    padding: 18vh 5rem 14vh 13rem;
+}
+
+.title-signin{
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
+
+.SignIn .backgroud-image p{
+    color: #333333;
+    font-weight: 900;
+    font-size: 1.6rem;
+    padding: 30vh 6.3rem 3vh;
+}
+
+.ant-row.ant-form-item-row.css-dev-only-do-not-override-ph9edi{
+    display: revert;
+}
+
+
+.link-SignUp{
+    margin: 0 4rem;
+}
+
+
+
+/* Mobie */
+@media only screen and (max-width: 600px) {
+    .backgroud-image{
+        display: none;
+    }
+    .SignIn .from-SignIn{
+        width: 90%;
+        padding: 1rem;
+    }
+    .Forgot-password{
+        margin-left: 14rem;
+    }
+
+    button.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-primary{
+        max-width: 100%;
+        height: 10vh;
+    }
+
+    .link-SignUp {
+        margin: 2.5rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 600px) {
+
+}
+
+/* talet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .backgroud-image{
+        display: none;
+    }
+    .SignIn .from-SignIn{
+        width: 100%;
+        padding: 16vh 0;
+        margin-left: 13rem;
+    }
+    .Forgot-password{
+        margin-left: 15rem;
+        font-size: 1rem;
+    }
+
+    button.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-primary{
+        max-width: 100%;
+    }
+}
+
+/* pc */
+@media only screen and (min-width: 1024px) {
+
+    .Forgot-password{
+        margin-left: 8rem;
+        font-size: 1rem;
+    }
+    button.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-primary{
+        max-width: 100%;
+    }
+    .link-SignUp{
+        
+    }
+}
+
