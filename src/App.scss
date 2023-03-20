@@ -1,0 +1,67 @@
+@import './assets/style.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.backgroud-image {
+  width: 35%;
+  height: 100vh;
+  background-color: $backgroud-color;
+  text-align: center;
+}
+
+.image img {
+  height: 55vh;
+}
+
+input#basic_username {
+  background-color: $primary-color-input;
+  height: 6vh;
+  border-radius:$border-radisus;
+}
+
+span.ant-input-affix-wrapper.css-dev-only-do-not-override-ph9edi {
+  background-color: $primary-color-input;
+  border-radius: $border-radisus;
+}
+
+input#basic_password {
+  display: revert;
+  background-color: $primary-color-input;
+  height: 5vh;
+  border-radius:$border-radisus;
+}
+
+span.ant-input-affix-wrapper.ant-input-password.css-dev-only-do-not-override-ph9edi {
+  border-radius: 2rem;
+  background-color: $primary-color-input;
+}
+
+
+.Forgot-password {
+  margin-left: 18rem;
+}
+
+
+button.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-primary {
+  width: 25rem;
+  height: 6vh;
+  border-radius: 0.8rem;
+  margin-top: 3vh;
+  background-color: #FF8A2D;
+  color: $color;
+  font-weight: 600;
+}
+
+span.ant-input-prefix {
+  font-weight: 700;
+}
