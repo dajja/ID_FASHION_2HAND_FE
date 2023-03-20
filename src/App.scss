@@ -25,8 +25,8 @@ body {
 
 input#basic_username {
   background-color: $primary-color-input;
-  height: 6vh;
-  border-radius:$border-radisus;
+  height: 5vh;
+  border-radius: $border-radisus;
 }
 
 span.ant-input-affix-wrapper.css-dev-only-do-not-override-ph9edi {
@@ -34,11 +34,15 @@ span.ant-input-affix-wrapper.css-dev-only-do-not-override-ph9edi {
   border-radius: $border-radisus;
 }
 
+label.ant-form-item-required {
+  font-weight: 700;
+}
+
 input#basic_password {
   display: revert;
   background-color: $primary-color-input;
   height: 5vh;
-  border-radius:$border-radisus;
+  border-radius: $border-radisus;
 }
 
 span.ant-input-affix-wrapper.ant-input-password.css-dev-only-do-not-override-ph9edi {
@@ -57,7 +61,7 @@ button.ant-btn.css-dev-only-do-not-override-ph9edi.ant-btn-primary {
   height: 6vh;
   border-radius: 0.8rem;
   margin-top: 3vh;
-  background-color: #FF8A2D;
+  background-color: $primary-color-button;
   color: $color;
   font-weight: 600;
 }

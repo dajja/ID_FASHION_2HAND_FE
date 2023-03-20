@@ -1,0 +1,52 @@
+@import '../../assets/style.scss';
+
+
+.SignUp {
+    display: flex;
+}
+
+.from-SignUp {
+    width: 65%;
+    height: 100vh;
+    padding: 5vh 5rem 0vh 13rem;
+}
+
+.title-signup {
+    font-size: 1.9rem;
+    margin-bottom: 2vh;
+}
+
+
+.backgroud-image p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    padding: 28vh 8.8rem 2vh;
+    font-weight: 900;
+}
+
+input#basic_Email {
+    border-radius: $border-radisus;
+    height: 6.7vh;
+    background-color: $primary-color-input;
+}
+
+
+input#basic_Confirm\ password {
+    border-radius: $border-radisus;
+    height: 5vh;
+    background-color: $primary-color-input;
+}
+
+.backgroud-image p b {
+    margin-left: 1rem;
+    color: $primary-color-button;
+}
+
+.ant-row.ant-form-item-row.css-dev-only-do-not-override-ph9edi {
+    display: revert;
+}
+
+.link-SignIn{
+    margin-left: 5rem;
+}
