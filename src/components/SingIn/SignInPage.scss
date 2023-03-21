@@ -1,5 +1,5 @@
 
-// @import '../.././assets/style.scss';
+@import '../.././assets/style.scss';
 
 .SignIn {
     display: flex;
@@ -59,7 +59,7 @@
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 768) {
+@media only screen and (min-width: 600px) {
     .backgroud-image{
         display: none;
     }
