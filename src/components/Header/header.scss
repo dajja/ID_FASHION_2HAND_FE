@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: #F5F5F5;
+    .header-3 {
+        display: flex;
+        font-weight: 600;
+        padding: 10px 0;
+        .header-3-item {
+            flex: 1;
+            h2 {
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+        .header-3a {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            margin-left: 10px;
+            button {
+                padding: 0 5px;
+                cursor: pointer;
+            }
+        }
+        .header-3b {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-3c {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 10px;
+        }
+    }
+}

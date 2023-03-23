@@ -1,4 +1,4 @@
-import './ShoppingCartPage.scss'
+import './ShoppingCartPage.scss';
 import React from 'react'
 import { InputNumber, Space, Checkbox } from 'antd';
 
