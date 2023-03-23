@@ -1,0 +1,109 @@
+@media only screen and (max-width: 600px) {
+    .col-1 {
+        width: 10% !important;
+    }
+    .col-2 {
+        width: 20% !important;
+    }
+    .col-3 {
+        width: 30% !important;
+    }
+    .col-4 {
+        width: 40% !important;
+    }
+    .col-5 {
+        width: 50% !important;
+    }
+    .col-6 {
+        width: 60% !important;
+    }
+    .col-7 {
+        width: 70% !important;
+    }
+    .col-8 {
+        width: 80% !important;
+    }
+    .col-9 {
+        width: 90% !important;
+    }
+    .col-10 {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* homepage */
+    .homepage-container {
+        padding: 10px !important;
+    }
+    .homepage-fashion-3 {
+        gap: 0 !important;
+        flex-wrap: wrap !important;
+    }
+    .homepage-slide-img {
+        margin: 0 auto !important;
+    }
+    .hp-fashion-img {
+        display: none !important;
+    }
+    .hp-fashion-description {
+        margin: 0 !important;
+    }
+    .hp-fs-description-grid-item1, .hp-fs-description-grid-item2 {
+        padding: 10px !important;
+    }
+    .hp-fs-description-grid-item1 {
+        line-height: 28px !important;
+        font-weight: 200 !important;
+    }
+    .homepage-newss {
+        display: none !important;
+    }
+    .homepage-product {
+        padding: 30px 0 !important;
+    }
+    .homepage-listItem {
+        display: grid !important ;
+        grid-template-columns: auto auto !important ;
+    }
+    .hp-sale-item-text {
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+    .hp-sale-item-text p {
+        font-size: 20px !important;
+    }
+    .hp-sale-item-text button {
+        padding: 8px !important;
+    }
+    .homepage-subcribe {
+        background-color: white !important;
+        height: 250px !important;
+    }
+    .homepage-subcribe-form-item {
+        padding: 20px !important;
+        border: 1px solid #EFEFEF !important;
+    }
+    .homepage-categories-form-item2 {
+        justify-content: start !important;
+        flex-wrap: wrap !important;
+    }
+    .homepage-categories-form-item2 div {
+        padding: 15px 5px !important;
+    }
+    .homepage-categories-form-item2 a {
+        padding: 10px 20px !important;
+    }
+    .homepage-instagram-item2 {
+        margin-top: 20px !important;
+    }
+    .homepage-instagram-item2 img {
+        display: flex;
+        margin: 0 auto;
+    }
+    .hp-instagram-arrow {
+        padding: 30px 0 !important;
+    }
+    /* homepage */
+}
