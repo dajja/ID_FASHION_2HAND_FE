@@ -202,4 +202,23 @@
         padding-bottom: 20px !important;
     }
     /* about */
+
+    /* checkout */
+    .checkout-content, .ck-form-user, .ck-form-billing-2-2, .ck-form-billing-2-2-2, .ck-form-method, .ck-cart-access {
+        flex-wrap: wrap !important;
+    }
+    input[type=text] {
+        border: 1px solid black !important;
+    }
+    select {
+        margin: 10px 0 !important;
+        border: 1px solid black !important;
+    }
+    .ck-cart-access button {
+        display: flex !important;
+        margin: 0 auto !important;
+        padding: 10px 15px !important;
+        margin-top: 10px !important;
+    }
+    /* checkout */
 }

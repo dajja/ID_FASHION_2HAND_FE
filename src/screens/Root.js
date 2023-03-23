@@ -6,6 +6,7 @@ import SignUpPage from '../components/SignUp/SignUpPage';
 import Homepage from "../pages/homepage/Homepage";
 import Account from "../pages/accountPage/Account";
 import About from "../pages/aboutPage/About";
+import Checkout from "../pages/checkout/Checkout";
 function Root() {
     return (
         <>
@@ -16,6 +17,7 @@ function Root() {
                     <Route path="/" element={<Homepage/>} />
                     <Route path="/username" element={<Account/>} />
                     <Route path="/about" element={<About/>} />
+                    <Route path="/checkout" element={<Checkout/>} />
                 </Routes>
             </BrowserRouter>
         </>
