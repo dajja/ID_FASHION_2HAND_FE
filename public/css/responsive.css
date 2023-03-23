@@ -172,4 +172,34 @@
         display: block !important;
     }
     /* account */
+
+    /* about */
+    .about-content {
+        margin: 0 !important;
+        padding: 0px !important;
+    }
+    .abt-content-1, .abt-content-2 {
+        flex-wrap: wrap !important;
+    }
+    .abt-content-2 > img {
+        order: 1 !important;
+    }
+    .abt-content-description {
+        order: 2 !important;
+        align-items: center !important;
+    }
+    .abt-content-icon {
+        gap: 20% !important;
+        justify-content: center !important;
+    }
+    .abt-content-description > h4 {
+        margin: 0 !important;
+        width: 80% !important;
+    }
+    .abt-content-img > img {
+        display: flex !important;
+        margin: 0 auto !important;
+        padding-bottom: 20px !important;
+    }
+    /* about */
 }

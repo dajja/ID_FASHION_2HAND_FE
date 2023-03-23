@@ -1,6 +1,7 @@
 import './account.scss';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
 function Account() {
     let tagData = [
         'Terms and Conditions', 'Help', 'Delivery', 'Return', 'Privacy',
@@ -9,6 +10,7 @@ function Account() {
         <>
             <div className="account-container">
                 <Header />
+                <Breadcrumb/>
                 <div className='account-content pad-15-20'>
                     <h2>My account</h2>
                     <div className='account-content-infor col-10'>
