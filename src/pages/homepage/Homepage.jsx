@@ -1,29 +1,31 @@
 import './homepage.scss';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 function Homepage() {
     let newsMasonry = [
         {
-            image: <img src="./image/new1.jpg" alt="" />,
+            image: <img src="./Image/new1.jpg" alt="" />,
             name: 'Zunairah Richardson',
             message: 'The difference',
         },
         {
-            image: <img src="./image/new2.jpg" alt="" />,
+            image: <img src="./Image/new2.jpg" alt="" />,
             name: 'Nela Combs',
             message: 'The important',
         },
         {
-            image: <img src="./image/new3.jpg" alt="" />,
+            image: <img src="./Image/new3.jpg" alt="" />,
             name: 'Kieran Mcconnell',
             message: `It's hard`,
         },
         {
-            image: <img src="./image/new4.jpg" alt="" />,
+            image: <img src="./Image/new4.jpg" alt="" />,
             name: 'Merryn Medure',
             message: `I didn't `,
         },
         {
-            image: <img src="./image/new5.jpg" alt="" />,
+            image: <img src="./Image/new5.jpg" alt="" />,
             name: 'Malak Mac',
             message: 'Vanity is',
         },
@@ -31,14 +33,14 @@ function Homepage() {
     return (
         <>
             <div className="homepage-container">
-                
+                <Header/>
                 <div className="homepage-slide">
-                    <img className="homepage-slide-img" src="./image/hero.png" alt="" />
+                    <img className="homepage-slide-img" src="./Image/hero.png" alt="" />
                 </div>
                 <div className="homepage-fashion">
                     <div className="homepage-fashion-3 col-10">
                         <div className="col-10 hp-fashion-img-div">
-                            <img className="col-10 hp-fashion-img" src="./image/Object.png" alt="" />
+                            <img className="col-10 hp-fashion-img" src="./Image/Object.png" alt="" />
                         </div>
                         <div className="hp-fashion-trig-desc col-10">
                             <div className="hp-fashion-description hp-fs-description-grid">
@@ -82,7 +84,7 @@ function Homepage() {
                             <button><a href="/">Shop now</a></button>
                         </div>
                         <div className="hp-sale-item-img">
-                            <img src="./image/placeholder.jpg" alt="" />
+                            <img src="./Image/placeholder.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -94,7 +96,19 @@ function Homepage() {
                                     <p> 2020 </p>  <h3> Recent </h3> <h3> looks </h3> <a href="/" > Discover now </a>
                                 </div>
                             </div>
-                            
+                            {newsMasonry.map((item, i) => {
+                                return (<>
+                                    <div className='homepage-news-item' key={i}>
+                                        <div className='hp-newsItem-img'>
+                                            {item.image}
+                                        </div>
+                                        <div className='hp-newsItem-inform'>
+                                            <p>{item.name}</p>
+                                            <h4>{item.message}</h4>
+                                        </div>
+                                    </div>
+                                </>)
+                            })}
                         </div>
                     </div>
                 </div>
@@ -138,12 +152,12 @@ function Homepage() {
                             <h4>@misto_insta</h4>
                         </div>
                         <div className="homepage-instagram-item2 col-10">
-                            <img className="col-8" src="./image/drill.jpg" alt="" />
+                            <img className="col-8" src="./Image/drill.jpg" alt="" />
                         </div>
                     </div>
                     <div className="hp-instagram-arrow"><i className="fa-solid fa-chevron-up" /></div>
                 </div>
-                
+                <Footer/>
             </div>
         </>
     )

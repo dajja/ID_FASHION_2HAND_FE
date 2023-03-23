@@ -34,7 +34,7 @@
 @media only screen and (max-width: 600px) {
     /* homepage */
     .homepage-container {
-        padding: 10px !important;
+        padding: 5px !important;
     }
     .homepage-fashion-3 {
         gap: 0 !important;
@@ -106,4 +106,46 @@
         padding: 30px 0 !important;
     }
     /* homepage */
+
+    /* header */
+    .header {
+        background-color: #F5F5F5 !important;
+    }
+    .header-3-item {
+        gap: 10px !important;
+        flex: auto !important;
+    }
+    .header-3-item-2 {
+        display: none !important;
+    }
+    .header-3c {
+        justify-content: end !important;
+    }
+    /* header */
+
+    /* footer */
+    .footer-3 {
+        gap: 20px  !important;
+        justify-content: center !important;
+    }
+    .footer-3b {
+        margin: 0 !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+    .footer-3b-1, .footer-3b-2 {
+        padding: 0 !important;
+    }
+    .footer-3b-2 {
+        margin-left: 50px !important;
+    }
+    .footer-3c {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0 auto !important;
+    }
+    .footer-3c-1 {
+        margin-top: 20px !important;
+    }
+    /* footer */
 }
