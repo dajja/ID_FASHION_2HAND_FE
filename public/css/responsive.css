@@ -148,4 +148,28 @@
         margin-top: 20px !important;
     }
     /* footer */
+
+    /* account */
+    .account-content-1, .account-content-2 {
+        padding: 5px 0 !important;
+    }
+    .account-content-1 .fa-chevron-left {
+        display: none !important;
+    }
+    .account-content-1 a {
+        color: rgb(44, 100, 183) !important;
+    }
+    .account-content-2 a {
+        font-size: 12px !important;
+    }
+    .act-content-order-2 {
+        text-align: center;
+    }
+    .act-content-order-3, .act-content-order-4, .act-content-order-5 {
+        display: none !important;
+    }
+    .act-content-order-6 {
+        display: block !important;
+    }
+    /* account */
 }
