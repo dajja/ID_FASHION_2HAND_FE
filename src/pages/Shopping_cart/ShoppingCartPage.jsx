@@ -1,12 +1,9 @@
 import './ShoppingCartPage.scss';
 import React from 'react'
-import { InputNumber, Space, Checkbox } from 'antd';
-
-
-
-const onChange = (value) => {
-    console.log('changed', value);
-};
+import { Checkbox } from 'antd';
+import Header from '../../components/Header/Header';
+import Breadcrumb from '../../components/Breadcrumb/Breadcrumb';
+import Footer from '../../components/Footer/Footer';
 
 const accuracy = (e) => {
     console.log(`checked = ${e.target.checked}`);
@@ -14,133 +11,82 @@ const accuracy = (e) => {
 
 export default function ShoppingCartPage() {
     return (
-        <div className='shopping_cart'>
-            <div className="breadcrumbs">
-                <div>Home</div>
-                <div><i class="fa-solid fa-angle-right"></i></div>
-                <div>Men</div>
-                <div><i class="fa-solid fa-angle-right"></i></div>
-                <div>Shoe</div>
-                <div><i class="fa-solid fa-angle-right"></i></div>
-                <div>Shoping Cart</div>
-            </div>
-            <div className='page-title'>
-                <h2>Shoping Cart</h2>
-            </div>
-
-            <div className='checkout_proceed'>
-                <div className='title-cart'>
-                    <i class="fa-solid fa-angle-left"></i>
-                    <p> Continue shopping </p>
-                </div>
-                <div className='right_sidebar'>
-
-                    <table>
-                        <div className='title-product'>
-                            <tr>
-                                <th className='product'>Item</th>
-                                <th className='color-product'>Color</th>
-                                <th className='quantity-product'>Size</th>
-                                <th className='price-product'>QTY</th>
-                                <th>Price</th>
-                            </tr>
+        <>
+            <div className='cart-container'>
+                <Header />
+                <Breadcrumb />
+                <div className='cart-content pad-15-20'>
+                    <h2>Shopping Cart</h2>
+                    <div className='cart-content-infor col-10'>
+                        <div className='cart-content-1 col-10'>
+                            <i class="fa-solid fa-chevron-left"></i>
+                            <a href="/">Continue shopping</a>
                         </div>
-
-                        <div className='cart-product'>
-                            <tr>
-                                <td className='product'>
-                                    <ul className='image-product'><img src="../Image/Screenshot (64).png" alt="" /></ul>
-                                    <ul className='name-code-product'>
-                                        <ul className='name-product'>
-                                            Everyday carry blue bottle YOLO neutra, tousled four loko
-                                        </ul>
-                                        <ul className='code-product'>
-                                            <li>Sku:</li>
-                                            <li>12345</li>
-                                        </ul>
-                                    </ul>
-
-                                </td>
-                                <td className='color-product'>Red</td>
-                                <td className='side-product'>US 8 |EU 41</td>
-                                <td className='quantity-product'>
-                                    <Space>
-                                        <InputNumber type={"number"} size="large" min={1} max={1000} defaultValue={1} onChange={onChange} />
-                                    </Space>
-                                </td>
-                                <td className='price-product'>$150</td>
-                                <td>
-                                    <ul className='action'>
-                                        <li>
-                                            Delete
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
+                        <div className='cart-content-2 col-10'>
+                            <table className='cart-table col-10'>
+                                <tr>
+                                    <th className='cl-1'>Item</th>
+                                    <th className='cl-2'>Color</th>
+                                    <th className='cl-2'>Size</th>
+                                    <th className='cl-2'>QTY</th>
+                                    <th className='cl-2'>Price</th>
+                                    <th className='cl-3'></th>
+                                </tr>
+                                <tr className='col-10'>
+                                    <td className='cl-1 col-10'>
+                                        <div className='td-item'>
+                                            <div className='td-item-img'>
+                                                <img src="/Image/giay1.jpg" alt="" />
+                                            </div>
+                                            <div className='td-item-name'>
+                                                Lorem ipsum dolor sit amet consectetur adipisicingnda mollitia impedi
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td className='cl-2 col-10'>
+                                        <div className='td-color'>
+                                            <div></div>
+                                            <div>Black</div>
+                                        </div>
+                                    </td>
+                                    <td className='cl-2 col-10'>US100000</td>
+                                    <td className='col-10'>
+                                        <div className='td-amount'>
+                                            <div style={{fontSize: '20px'}}>2</div>
+                                            <div className='td-amount-btn'>
+                                                <button className='td-btn-up'>+</button>
+                                                <button className='td-btn-down'>-</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td className='cl-2 col-10'>$1500</td>
+                                    <td className='cl-3 col-10'>
+                                        <button>X Remove</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div className="cart-shipping">
+                                <div>Shipping:</div>
+                                <div>Free</div>
+                            </div>
+                            <div className="cart-shipping">
+                                <div>Subtotal:</div>
+                                <div>$250</div>
+                            </div>
+                            <div className="cart-shipping">
+                                <h3>Cart total:</h3>
+                                <div>$250</div>
+                            </div>
+                            <div className="btn-checkout">
+                                <Checkbox onChange={accuracy}>I have a coupon code</Checkbox>
+                                <button>Checkout</button>
+                            </div>
                         </div>
-                        <div className='cart-product'>
-                            <tr>
-                                <td className='product'>
-                                    <ul className='image-product'><img src="../Image/Screenshot (64).png" alt="" /></ul>
-                                    <ul className='name-code-product'>
-                                        <ul className='name-product'>
-                                            Everyday carry blue bottle YOLO neutra, tousled four loko
-                                        </ul>
-                                        <ul className='code-product'>
-                                            <li>Sku:</li>
-                                            <li>12345</li>
-                                        </ul>
-                                    </ul>
-
-                                </td>
-                                <td className='color-product'>Red</td>
-                                <td className='side-product'>US 8 |EU 41</td>
-                                <td className='quantity-product'>
-                                    <Space>
-                                        <InputNumber size="large" min={1} max={1000} defaultValue={1} onChange={onChange} />
-                                    </Space>
-                                </td>
-                                <td className='price-product'>$150</td>
-                                <td>
-                                    <ul className='action'>
-                                        <li>
-                                            Delete
-                                        </li>
-                                        <li>
-                                            <i class="fa-solid fa-xmark"></i>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </div>
-                    </table>
-
-                    <div className='delivery-code'>
-                        <div className='delivery-title'>Shipping :</div>
-                        <div className='code-delivery'>Free</div>
-                    </div>
-
-                    <div className='price-list'>
-                        <div className='price-list-title'>Subtotal :</div>
-                        <div className='subtotal-price'>$250</div>
-                    </div>
-
-                    <div className='price-cart-total'>
-                        <div className='cart-total-tital'>Cart total :</div>
-                        <div className='price-total'>$250</div>
-                    </div>
-
-                    <div className="btn-checkout">
-                        <Checkbox onChange={accuracy}>I have a coupon code</Checkbox>
-                        <button>Checkout</button>
                     </div>
                 </div>
+                <Footer /> 
             </div>
 
-
-        </div>
+        </>
     )
 }

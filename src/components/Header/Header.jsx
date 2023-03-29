@@ -1,4 +1,5 @@
 import './header.scss';
+import { Link } from 'react-router-dom';
 export default function Header() {
     return (
         <>
@@ -14,13 +15,16 @@ export default function Header() {
                     </div>
                     <div className="header-3b header-3-item col-4">
                         <div>
-                            <h2 style={{ fontWeight: 600 }}>MESSTO</h2>
+                            <Link to={'/'} style={{textDecoration: 'none', color: 'black'}}><h2 style={{ fontWeight: 600 }}>MESSTO</h2></Link>
                         </div>
                     </div>
                     <div className="header-3c header-3-item col-4">
                         <div><i className="fa-solid fa-magnifying-glass" /></div>
                         <div>En | USD</div>
-                        <div><i className="fa-solid fa-cart-shopping" /></div>
+                        <div> 
+                            <Link to={'/checkout'} ><i className="fa-solid fa-cart-shopping" /> </Link>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
