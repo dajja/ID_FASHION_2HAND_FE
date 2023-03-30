@@ -1,141 +1,135 @@
-.look-book-page {
-    width: 100%;
-}
-
-.routing {
-    width: 100%;
-    height: 27vh;
-    padding: 12vh 0px 9vh 3rem;
-    display: flex;
-
-    div {
-        margin: 0 0.5rem;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+.lookbook-container {
+    max-width: 100%;
+    box-sizing: border-box;
+    .lookbook-content {
+        font-family: 'Roboto', sans-serif;
+        max-width: 100%;
+        padding: 40px 20px;
+        .lookbook-content-1 {
+            position: relative;
+            display: flex;
+            width: 60%;
+            margin: 0 auto;
+            .lookbook-image-1 {
+                width: 55%;
+                img {
+                    width: 100%;
+                }
+            }
+            .lookbook-title {
+                width: 45%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: -50px;
+                .lookbook-title-h2 {
+                    font-size: 30px;
+                    font-weight: 700;
+                    font-family: 'Montserrat', sans-serif;
+                    line-height: 50px;
+                }
+                p {
+                    padding: 30px 0;
+                    color: #757575;
+                    line-height: 30px;
+                }
+            }
+        }
+        .lookbook-content-2 {
+            padding-top: 50px;
+        }
+        .lookbook-content-3 {
+            margin-top: -300px;
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+            width: 100%;
+            padding: 0 10%;
+            .lb-content-3-1 {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                img {
+                    width: 100%;
+                }
+                .lb-content-3-text {
+                    width: 100%;
+                    padding-left: 20%;
+                    p {
+                        padding: 30px 0;
+                        width: 100%;
+                        color: #757575;
+                        line-height: 25px;
+                    }
+                    .lb-icon {
+                        display: flex;
+                        gap: 5%;
+                        .fa-facebook, .fa-instagram, .fa-twitter, .fa-pinterest-p, .fa-whatsapp, .fa-snapchat {
+                            padding: 5px;
+                            color: #757575;
+                            font-size: 20px;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+            .lb-content-3-2 {
+               width: 50%;
+               padding-top: 100px;
+               display: flex;
+               flex-direction: column;
+               .lb-button {
+                    padding-bottom: 80px;
+                    button {
+                        padding: 10px 25px;
+                        background-color: white;
+                        border: 2px solid black;
+                        font-weight: 600;
+                        cursor: pointer;
+                    }
+               }
+            }
+        }
     }
-}
-
-.lookbook-title-image {
-    width: 45rem;
-    height: 125vh;
-    margin: 0 auto;
-}
-
-.lookbook-image {
-    position: absolute;
-    z-index: -1;
-
-    img {
-        width: 32rem;
-        height: 110vh;
+    .lookbook-divide {
+        margin-top: 50px;
+        width: 100%;
+        height: 1px;
+        background-color: rgb(190, 186, 186);
     }
-}
-
-.look-book-title {
-    margin: 35vh 18rem 95vh 28rem;
-    position: absolute;
-
-    h2 {
-        font-size: 3rem;
-        margin-bottom: 5vh;
+    .tag {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        .tag-item {
+            color: #757474;
+            font-weight: 600;
+            padding: 8px;
+            background-color: rgb(239, 237, 237);
+        }
     }
 }
 
 .slick-slider.slick-initialized {
     margin-bottom: 50vh;
 }
-
-
-
 .slick-prev {
     display: none !important;
 }
-
 .slick-next {
     display: none !important;
 }
-
 .slick-slide img {
     display: flex;
     width: 25rem;
     height: 73vh;
 }
-
-.images1 {
-    position: absolute;
-
-    img {
-        width: 27rem;
-        margin: 0vh 0rem 0vh 16rem;
-    }
-}
-
-.images2 {
-    position: absolute;
-
-    img {
-        width: 22rem;
-        margin: 28vh 0rem 0vh 52rem;
-    }
-}
-
-.block_2 {
-    margin: 60vh 0;
-
-    .butn-text-icon {
-        width: 35rem;
-        height: 100vh;
-        margin: 0 auto;
-    }
-
-    .butn {
-        margin: 7vh 0rem 80vh 25rem;
-
-        button {
-            width: 10rem;
-            height: 5vh;
-            background-color: #FFFF;
-            font-weight: 700;
-            border: 2px solid black;
-        }
-    }
-
-    .text {
-        padding: 0 7rem 3vh 0rem;
-
-        p {
-            line-height: 3.7vh;
-        }
-    }
-
-
-}
-
-i.fa-brands {
-    margin-right: 1rem;
-}
-
-
 ul.slick-dots {
     display: none !important;
 }
-
-
 .slick-track {
     left: 12rem !important;
-}
-
-
-.tags-childlinks {
-    display: flex;
-    height: 30vh;
-    border-top: 1px solid;
-
-    div {
-        height: 5vh;
-        padding: 0vh 1rem 0vh 1rem;
-        border: 1px solid;
-        margin: 10vh 0.7rem;
-        font-size: 0.9rem;
-        background-color: #EEEEEE;
-        color: #8C8C8C;
-    }
 }
