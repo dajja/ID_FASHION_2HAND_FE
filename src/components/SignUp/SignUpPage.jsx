@@ -10,6 +10,13 @@ const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
 };
 
+const validateMessages = {
+    required: '${label} is required!',
+    types: {
+        email: '${label} is not a valid email!',
+    }
+};
+
 export default function SignUpPage() {
     return (
         <div className='SignUp'>
@@ -34,6 +41,7 @@ export default function SignUpPage() {
                     onFinish={onFinish}
                     onFinishFailed={onFinishFailed}
                     autoComplete="off"
+                    validateMessages={validateMessages}
                 >
                     <Form.Item
                         label="Username"
@@ -57,7 +65,8 @@ export default function SignUpPage() {
                         rules={[
                             {
                                 required: true,
-                                message: 'Please input your Email!',
+                                // message: 'Please input your email!',
+                                type: 'email',
                             },
                         ]}
                     >
@@ -71,7 +80,11 @@ export default function SignUpPage() {
                             {
                                 required: true,
                                 message: 'Please input your password!',
+
                             },
+                            {
+                                min: 8,
+                            }
                         ]}
                     >
                         <Input.Password placeholder='Password' />
@@ -85,6 +98,14 @@ export default function SignUpPage() {
                                 required: true,
                                 message: 'Please input your confirm password!',
                             },
+                            ({ getFieldValue }) => ({
+                                validator(_, value) {
+                                    if (!value || getFieldValue('password') === value) {
+                                        return Promise.resolve();
+                                    }
+                                    return Promise.reject(new Error('The two passwords that you entered do not match!'));
+                                },
+                            }),
                         ]}
                     >
                         <Input.Password placeholder='Confirm Password' />
