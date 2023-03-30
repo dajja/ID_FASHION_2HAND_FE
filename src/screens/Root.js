@@ -3,6 +3,7 @@ import React from "react";
 
 import SignInPage from "../components/SingIn/SignInPage";
 import SignUpPage from '../components/SignUp/SignUpPage';
+import ForgotPassWord from "../components/ForgotPassword/ForgotPasswordPage"
 import Homepage from "../pages/homepage/Homepage";
 import Account from "../pages/accountPage/Account";
 import About from "../pages/aboutPage/About";
@@ -16,6 +17,7 @@ function Root() {
                 <Routes>
                     <Route path="/signup" element={<SignUpPage/>} />
                     <Route path="/signin" element={<SignInPage/>} />
+                    <Route path="/forgotpassword" element={<ForgotPassWord/>} />
                     <Route path="/" element={<Homepage/>} />
                     <Route path="/username" element={<Account/>} />
                     <Route path="/about" element={<About/>} />

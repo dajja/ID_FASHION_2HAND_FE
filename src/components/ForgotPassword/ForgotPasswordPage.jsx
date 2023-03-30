@@ -10,6 +10,13 @@ const onFinishFailed = (errorInfo) => {
     console.log('Failed:', errorInfo);
 };
 
+const validateMessages = {
+    required: '${label} is required!',
+    types: {
+        email: '${label} is not a valid email!',
+    }
+};
+
 export default function ForgotPassword() {
     return (
         <div className='ForgotPassword'>
@@ -34,6 +41,7 @@ export default function ForgotPassword() {
                     onFinish={onFinish}
                     onFinishFailed={onFinishFailed}
                     autoComplete="off"
+                    validateMessages={validateMessages}
                 >
                     <Form.Item
                         label="Email"
@@ -41,7 +49,8 @@ export default function ForgotPassword() {
                         rules={[
                             {
                                 required: true,
-                                message: 'Please input your Email!',
+                                // message: 'Please input your Email!',
+                                type:'email',
                             },
                         ]}
                     >

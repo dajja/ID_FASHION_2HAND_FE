@@ -59,6 +59,9 @@ export default function SignInPage() {
                                 required: true,
                                 message: 'Please input your password!',
                             },
+                            {
+                                min: 8,
+                            }
                         ]}
                     >
                         <Input.Password placeholder='Password' />
